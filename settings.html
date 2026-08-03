@@ -1,0 +1,49 @@
+<div id="wat-settings" class="wat-settings">
+    <div class="inline-drawer">
+        <div class="inline-drawer-toggle inline-drawer-header">
+            <b>Auto Character Tracker</b>
+            <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+        </div>
+        <div class="inline-drawer-content">
+
+            <label class="checkbox_label" for="wat_enabled">
+                <input id="wat_enabled" type="checkbox" />
+                <span>启用自动追踪</span>
+            </label>
+
+            <hr>
+            <h4>API 配置（自定义 OpenAI 格式）</h4>
+
+            <label for="wat_api_base">API Base URL</label>
+            <input id="wat_api_base" type="text" class="text_pole"
+                   placeholder="https://api.example.com/v1" />
+
+            <label for="wat_api_key">API Key</label>
+            <input id="wat_api_key" type="password" class="text_pole"
+                   placeholder="sk-..." />
+
+            <label for="wat_api_model">模型名称</label>
+            <input id="wat_api_model" type="text" class="text_pole"
+                   placeholder="gpt-4o-mini" />
+
+            <div class="flex-container">
+                <input id="wat_test_connection" class="menu_button" type="button" value="测试连接" />
+                <span id="wat_test_status"></span>
+            </div>
+
+            <hr>
+            <h4>世界书目标</h4>
+            <label for="wat_book_name_template">世界书命名模板</label>
+            <input id="wat_book_name_template" type="text" class="text_pole"
+                   placeholder="AutoTracker_{{char}}" />
+            <small>支持占位符 {{char}}，会自动替换为当前角色名</small>
+
+            <hr>
+            <div class="flex-container">
+                <input id="wat_save_settings" class="menu_button" type="button" value="保存设置" />
+                <span id="wat_save_status"></span>
+            </div>
+
+        </div>
+    </div>
+</div>

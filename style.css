@@ -1,0 +1,32 @@
+.wat-settings .text_pole {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.wat-settings label {
+    display: block;
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+.wat-settings small {
+    display: block;
+    opacity: 0.7;
+    margin-bottom: 8px;
+}
+
+.wat-settings hr {
+    margin: 12px 0;
+    opacity: 0.3;
+}
+
+.wat-settings .flex-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#wat_test_status,
+#wat_save_status {
+    font-size: 0.9em;
+}
