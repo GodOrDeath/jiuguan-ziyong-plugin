@@ -7,7 +7,7 @@ import { extension_settings, getContext } from "../../../extensions.js";
 import {
     ensureSettings,
     testConnection,
-} from "./lib/apiConfig.js";
+} from "./apiConfig.js";
 
 const MODULE = "worldbookAutoTracker";
 const EXT_FOLDER = "jiuguan-ziyong-plugin"; // 需与GitHub仓库名/实际安装目录名一致
